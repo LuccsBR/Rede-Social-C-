@@ -57,7 +57,7 @@ namespace desafio
                 strSQL.ExecuteNonQuery();
                 SmtpClient smtpClient = new SmtpClient("smtp.Office365.com", 587);
                 smtpClient.EnableSsl = true;
-                smtpClient.Credentials = new NetworkCredential("lo214377@alunos.unisanta.br", "Santista72*");
+                smtpClient.Credentials = new NetworkCredential("/*Email para envio de autenticação */", "/*Senha*/");
 
                 MailMessage mailMessage = new MailMessage();
                 mailMessage.From = new MailAddress("lo214377@alunos.unisanta.br");
